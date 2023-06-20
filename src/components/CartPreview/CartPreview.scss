@@ -8,6 +8,14 @@
   top: 3.5rem;
   overflow: auto;
 
+  .exit-modal{
+    display: flex;
+    justify-content: flex-end;
+
+    .cross {
+      cursor: pointer;
+    }
+  }
   span {
     margin-top: 2rem;
     display: flex;

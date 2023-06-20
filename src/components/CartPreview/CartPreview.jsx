@@ -7,8 +7,10 @@ import {
   incrementQuantity,
 } from "../../redux/slice/cartSlice";
 import { Link } from "react-router-dom";
+import ShowOnLogin, { ShowOnLogout } from "../hiddenLink/hiddenLink";
+import { RxCross2 } from "react-icons/rx";
 
-const CartPreview = () => {
+const CartPreview = ({ setShowCart }) => {
   const cartItems = useSelector((state) => state.cart.cartItems || []);
   const dispatch = useDispatch();
 
@@ -21,6 +23,13 @@ const CartPreview = () => {
 
   return (
     <div className="cart-preview">
+      <div className="exit-modal">
+        <RxCross2
+          className="cross"
+          size={22}
+          onClick={() => setShowCart(false)}
+        />
+      </div>
       {cartItems.length == 0 ? (
         <span>Cart is empty</span>
       ) : (
@@ -40,16 +49,26 @@ const CartPreview = () => {
           ))}
         </div>
       )}
-      {cartItems.length > 0 ? 
-      
-      <div className="action-buttons">
-        <Link to="/cart">
-          <button className="btn-cart">To Cart</button>
-        </Link>
-        <button onClick={() => dispatch(clearCart())} className="btn-remove">Clear Cart</button>
-      </div>
-      : ""
-    }
+      {cartItems.length > 0 ? (
+        <div className="action-buttons">
+          <ShowOnLogin>
+            <Link to="/cart">
+              <button className="btn-cart">To Cart</button>
+            </Link>
+          </ShowOnLogin>
+
+          <ShowOnLogout>
+            <Link to="/login">
+              <button className="btn-cart">Login to Purchase</button>
+            </Link>
+          </ShowOnLogout>
+          <button onClick={() => dispatch(clearCart())} className="btn-remove">
+            Clear Cart
+          </button>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

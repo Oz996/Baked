@@ -87,7 +87,7 @@ const Header = () => {
           </ShowOnLogin>
 
           <FaShoppingCart className="cart-icon" onClick={handleCartClick} />
-          {showCart && <CartPreview />}
+          {showCart && <CartPreview setShowCart={setShowCart} />}
           <div className="cart-length"></div>
         </nav>
       </header>
