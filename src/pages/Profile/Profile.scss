@@ -1,0 +1,27 @@
+.container{
+    width: 60%;
+    margin: 0 auto;
+
+    .profile-main{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 5rem;
+
+        h2{
+            font-size: 2rem;
+        }
+        button{
+            border: none;
+            padding: .6rem 1rem;
+            background-color: red;
+            color: white;
+            border-radius: .8rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: .2rem;
+        }
+    }
+
+}

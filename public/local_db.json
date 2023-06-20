@@ -1,0 +1,234 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "brand": "Abbott's Bakery",
+      "name": "Sourdough Grains & Seeds",
+      "description": "Abbott's Bakery Sourdough Grains & Seeds Sandwich Slice Bread Loaf",
+      "details": "Turn your everyday meal into a gourmet delight with Abbott’s Bakery® Sourdough. This loaf is bursting with flavour and texture from our special blend of 11 grains and seeds which perfectly complements the mild sourdough taste. A sprinkle of coarsely ground pumpkin seeds adds an irresistible crunch sensation while tantalising your tastebuds.",
+      "weight": 760,
+      "image": "/images/ware1.png",
+      "thumbnail1": "/images/ware1.png",
+      "thumbnail2": "/images/ware1.1.png",
+      "thumbnail3": "/images/ware1.2.png",
+      "thumbnail4": "/images/ware1.3.png",
+      "category": "Bread",
+      "price": 5,
+      "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
+      "nutrition": [
+        {
+          "Energy": "1100kj",
+          "Protein": "12g",
+          "Fat": "6g",
+          "Carbohydrate": "41g",
+          "Sugars": "1g",
+          "Sodium": "330mg"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Harvest seeds & grains",
+      "brand": "Abbott's Bakery",
+      "description": "Abbott's Village Bakery - Bread Harvest - Seeds & Grains",
+      "details": "Now here’s an interesting loaf. A blend of canola seeds, linseeds, sunflower seeds and sesame seeds give extra pop when eaten fresh. And if you listen closely when you toast it, you’ll even hear those seeds pop. But why stop there? A sesame seed topping adds a roasted nutty flavour.",
+      "weight": 750,
+      "image": "/images/ware2.png",
+      "thumbnail1": "/images/ware2.png",
+      "thumbnail2": "/images/ware2.1.png",
+      "thumbnail3": "/images/ware2.2.png",
+      "thumbnail4": "/images/ware2.3.png",
+      "category": "Bread",
+      "price": 5,
+      "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
+      "nutrition": [
+        {
+          "Energy": "1100kj",
+          "Protein": "12g",
+          "Fat": "6g",
+          "Carbohydrate": "41g",
+          "Sugars": "1g",
+          "Sodium": "330mg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Grain Plus Wholemeal",
+      "brand": "9 Grain",
+      "description": "Tip Top 9 Grain Original Low Gi Sandwich Slice Bread Loaf",
+      "details": "Tip Top® is all about home-grown goodness. That's why we bake every day with Aussie wheat. We partner with Foodbank to share goodness with the community. And we use more sustainable packaging wherever we can so Australia stays beautiful for generations to come.",
+      "weight": 700,
+      "image": "/images/ware3.png",
+      "thumbnail1": "/images/ware3.png",
+      "thumbnail2": "/images/ware3.1.png",
+      "thumbnail3": "/images/ware3.2.png",
+      "thumbnail4": "/images/ware3.3.png",
+      "category": "Bread",
+      "price": 6,
+      "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
+      "nutrition": [
+        {
+          "Energy": "1100kj",
+          "Protein": "12g",
+          "Fat": "6g",
+          "Carbohydrate": "41g",
+          "Sugars": "1g",
+          "Sodium": "330mg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "White Wholemeal",
+      "brand": "Wonder White",
+      "description": "Wonder White Wholemeal With Iron Sandwich Slice",
+      "details": "Made in Australia from at least 90% Australian ingredients",
+      "weight": 700,
+      "image": "/images/ware4.png",
+      "thumbnail1": "/images/ware4.png",
+      "thumbnail2": "/images/ware4.1.png",
+      "thumbnail3": "/images/ware4.2.png",
+      "thumbnail4": "/images/ware4.3.png",
+      "category": "Bread",
+      "price": 4,
+      "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
+      "nutrition": [
+        {
+          "Energy": "1100kj",
+          "Protein": "12g",
+          "Fat": "6g",
+          "Carbohydrate": "41g",
+          "Sugars": "1g",
+          "Sodium": "330mg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Double Choc Chip Muffins",
+      "brand": "Great Temptations",
+      "description": "Great Temptations Gluten Free Double Choc Chip Muffins 4 Pack",
+      "details": "Chocoholics rejoice! These decadent & Light Chocolate Muffins are not only studded with chocolate chips but topped with them too. Aussie made and 100% gluten free; these are perfect with a coffee, as part of a party spread or warmed in the microwave and served with ice cream!",
+      "weight": 300,
+      "image": "/images/ware5.png",
+      "thumbnail1": "/images/ware5.png",
+      "thumbnail2": "/images/ware5.1.png",
+      "thumbnail3": "/images/ware5.png",
+      "thumbnail4": "/images/ware5.1.png",
+      "category": "Pastry",
+      "price": 6,
+      "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
+      "nutrition": [
+        {
+          "Energy": "1100kj",
+          "Protein": "12g",
+          "Fat": "6g",
+          "Carbohydrate": "41g",
+          "Sugars": "1g",
+          "Sodium": "330mg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Orange & Poppy Seed Muffins",
+      "brand": "Great Temptations",
+      "description": "Great Temptations Gluten Free Orange & Poppy Seed Muffins 4 Pack",
+      "details": "Get ready for a taste sensation! These Light & Fluffy, Orange Muffins are made with real orange pieces and orange juice for a zesty zing, then dotted with crunchy poppyseeds. Aussie made and 100% gluten free; these are going to be your new favourite accompaniment to a cuppa!",
+      "weight": 300,
+      "image": "/images/ware6.png",
+      "thumbnail1": "/images/ware6.png",
+      "thumbnail2": "/images/ware6.1.png",
+      "thumbnail3": "/images/ware6.png",
+      "thumbnail4": "/images/ware6.1.png",
+      "category": "Pastry",
+      "price": 6,
+      "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
+      "nutrition": [
+        {
+          "Energy": "1100kj",
+          "Protein": "12g",
+          "Fat": "6g",
+          "Carbohydrate": "41g",
+          "Sugars": "1g",
+          "Sodium": "330mg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Happy Pancakes",
+      "brand": "Marcels",
+      "description": "Marcels Happy Pancakes X6",
+      "details": "I call myself a Happy Pancake. Sometimes I am called a 'Hotcake, a “Pikelet” or an “American Pancake'.  Well I am a Happy Pancake, slightly thicker and fluffier than a regular Pikelet. I am full of homemade goodness and taste like I was made just a moment ago. The perfect no fuss option for breakfast or dessert.",
+      "weight": 240,
+      "image": "/images/ware7.png",
+      "thumbnail1": "/images/ware7.png",
+      "thumbnail2": "/images/ware7.png",
+      "thumbnail3": "/images/ware7.png",
+      "thumbnail4": "/images/ware7.png",
+      "category": "Pastry",
+      "price": 7,
+      "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
+      "nutrition": [
+        {
+          "Energy": "1100kj",
+          "Protein": "12g",
+          "Fat": "6g",
+          "Carbohydrate": "41g",
+          "Sugars": "1g",
+          "Sodium": "330mg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Blueberry Pancakes",
+      "brand": "Marcels",
+      "description": "Marcels Merry Blueberry Pancakes x6",
+      "details": "Marcel's Merry Blueberry Flavoured Pancakes come packed with delicious blueberry pieces, sure to be a hit with the family. So good served with extra blueberries and cream. Try a pack today!",
+      "weight": 240,
+      "image": "/images/ware8.png",
+      "thumbnail1": "/images/ware8.png",
+      "thumbnail2": "/images/ware8.png",
+      "thumbnail3": "/images/ware8.png",
+      "thumbnail4": "/images/ware8.png",
+      "category": "Pastry",
+      "price": 7,
+      "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
+      "nutrition": [
+        {
+          "Energy": "1100kj",
+          "Protein": "12g",
+          "Fat": "6g",
+          "Carbohydrate": "41g",
+          "Sugars": "1g",
+          "Sodium": "330mg"
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "orderData": [
+        {
+          "name": "White Wholemeal",
+          "price": 4,
+          "quantity": 3
+        },
+        {
+          "name": "Grain Plus Wholemeal",
+          "price": 6,
+          "quantity": 3
+        },
+        {
+          "name": "Blueberry Pancakes",
+          "price": 7,
+          "quantity": 3
+        }
+      ],
+      "id": 1
+    }
+  ]
+}

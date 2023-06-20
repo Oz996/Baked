@@ -1,0 +1,41 @@
+.order-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.80);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .modal-contents{
+        background-color: white;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        width: 40rem;
+        height: 25rem;
+        padding: 2rem;
+        border-radius: .2rem;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 8vw;
+            margin-block: -1rem;
+        }
+
+        h2{
+            font-size: 2rem;
+        }
+        button{
+            margin-top: 1.5rem;
+            padding: 1rem 2.5rem;
+            border: none;
+            background-color: #35A00F;
+            color: white;
+            border-radius: .8rem;
+            cursor: pointer;
+        }
+    }
+}

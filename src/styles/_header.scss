@@ -1,0 +1,49 @@
+header{
+    background-color: $primary-color;
+    height: 11rem;
+    width: 100vw;
+  }
+  header h2{
+    position: absolute;
+    left: 20rem;
+    top: 4.5rem; 
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5rem;
+  }
+  header span{
+    font-size: 2rem;
+  }
+  header img{
+    width: 18rem;
+    position: absolute;
+    left: 3.5rem;
+    top: -3.3rem; 
+  }
+  
+  .logo-div{
+    display: flex;
+  }
+  nav{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 10rem;
+    top: 4rem;
+    gap: 2.5rem;
+
+    a, .cart-icon{
+     text-decoration: none;
+     color: white;
+     margin: 1rem;
+     font-size: 2.2rem;
+     display: flex; 
+     gap: .5rem;
+     cursor: pointer;
+   }
+  }
+  
+  .ware-image{
+    height: 20rem;
+  }
