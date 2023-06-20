@@ -53,13 +53,17 @@ const CartPreview = ({ setShowCart }) => {
         <div className="action-buttons">
           <ShowOnLogin>
             <Link to="/cart">
-              <button className="btn-cart">To Cart</button>
+              <button className="btn-cart" onClick={() => setShowCart(false)}>
+                To Cart
+              </button>
             </Link>
           </ShowOnLogin>
 
           <ShowOnLogout>
             <Link to="/login">
-              <button className="btn-cart">Login to Purchase</button>
+              <button className="btn-cart" onClick={() => setShowCart(false)}>
+                Login to Purchase
+              </button>
             </Link>
           </ShowOnLogout>
           <button onClick={() => dispatch(clearCart())} className="btn-remove">
