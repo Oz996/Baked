@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const getProducts = createAsyncThunk("getProducts", async () => {
-  const res = await fetch("https://baked-6wqo.onrender.com/products");
+  const res = await fetch("http://localhost:3000/products");
   const data = res.json();
   return data;
 });
