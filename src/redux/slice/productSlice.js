@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const getProducts = createAsyncThunk("getProducts", async () => {
-  const res = await fetch(`${process.env.REACT_APP_API_URL}/products`);
+  const res = await fetch("http://localhost:3000//products");
   const data = res.json();
   return data;
 });
