@@ -40,7 +40,7 @@ const Cart = () => {
       quantity: item.quantity,
     }));
 
-    axios.post("http://localhost:3000/orders", { orderData });
+    axios.post("https://baked-api.onrender.com/orders", { orderData });
   };
 
   const handleModalClick = () => {
