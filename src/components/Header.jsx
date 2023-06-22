@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { FaHome, FaShoppingCart } from "react-icons/fa";
 import { GiSlicedBread } from "react-icons/gi";
-import { HiUser } from "react-icons/hi";
+import { HiUser, HiOutlineLogout } from "react-icons/hi";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../firebase/config";
 import { useDispatch, useSelector } from "react-redux";
@@ -58,38 +58,40 @@ const Header = () => {
   return (
     <>
       <header className={headerClass}>
-        <div className="logo-div">
-          <NavLink to="/">
-            <img src="/images/logo.png" alt="" />
-            <h2>
-              BAKED <br /> <span> .com </span>
-            </h2>
-          </NavLink>
-        </div>
-
-        <nav>
-          <NavLink to="/profile">{email}</NavLink>
-          <NavLink to="/">
-            <FaHome />
-            Home
-          </NavLink>
-          <NavLink to="/products">
-            <GiSlicedBread /> Products
-          </NavLink>
-          <ShowOnLogout>
-            <NavLink to="/login">
-              <HiUser />
-              Login
+        <div className="header-content">
+          <div className="logo-div">
+            <NavLink to="/">
+              <img src="/images/logo.png" alt="" />
+              <h2>
+                BAKED <br /> <span> .com </span>
+              </h2>
             </NavLink>
-          </ShowOnLogout>
-          <ShowOnLogin>
-            <NavLink onClick={logoutUser}>Logout</NavLink>
-          </ShowOnLogin>
+          </div>
 
-          <FaShoppingCart className="cart-icon" onClick={handleCartClick} />
-          {showCart && <CartPreview setShowCart={setShowCart} />}
-          <div className="cart-length"></div>
-        </nav>
+          <nav>
+            <NavLink to="/profile"> <span>{email}</span></NavLink>
+            <NavLink to="/">
+              <FaHome />
+              <span>Home</span>
+            </NavLink>
+            <NavLink to="/products">
+              <GiSlicedBread /> <span>Products</span>
+            </NavLink>
+            <ShowOnLogout>
+              <NavLink to="/login">
+                <HiUser />
+                <span>Login</span>
+              </NavLink>
+            </ShowOnLogout>
+            <ShowOnLogin>
+              <NavLink onClick={logoutUser}> <HiOutlineLogout/> <span>Logout</span> </NavLink>
+            </ShowOnLogin>
+
+            <FaShoppingCart className="cart-icon" onClick={handleCartClick} />
+            {showCart && <CartPreview setShowCart={setShowCart} />}
+            <div className="cart-length"></div>
+          </nav>
+        </div>
       </header>
     </>
   );

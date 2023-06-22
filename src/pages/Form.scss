@@ -74,6 +74,13 @@
     }
   }
 }
+
+@media (max-width: 900px ){
+  .form-wrapper{
+    width: 40rem;
+  }
+}
+
 .baked {
   display: flex;
   flex-direction: column;
