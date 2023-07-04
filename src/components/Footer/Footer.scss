@@ -1,6 +1,7 @@
+@import '../.././styles/colors';
+
 footer {
-  background-color: rgb(228, 228, 228);
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,13 +10,28 @@ footer {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 20rem;
 
+  figure{
+    img{
+      width: 15rem;
+    }
+  }
   div {
     display: flex;
-    gap: 0.5rem;
+    gap: 3.5rem;
+
+    .footer-icon{
+      cursor: pointer;
+
+      &:hover{
+        color: $primary-color;
+      }
+    }
   }
 
   h3 {
     font-size: 1.4rem;
-    color: white;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 }

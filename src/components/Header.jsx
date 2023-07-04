@@ -74,7 +74,7 @@ const Header = () => {
               <FaHome />
               <span>Home</span>
             </NavLink>
-            <NavLink to="/products">
+            <NavLink to="/">
               <GiSlicedBread /> <span>Products</span>
             </NavLink>
             <ShowOnLogout>

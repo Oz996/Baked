@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../redux/slice/productSlice";
+import LoaderBig from "../utils/Loader/LoaderBig";
 
 const Products = () => {
   const [search, setSearch] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("");
   const [brandFilter, setBrandFilter] = useState("");
   const { products } = useSelector((state) => state.products);
+  const isLoading = useSelector((state) => state.products.isLoading);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -31,6 +33,7 @@ const Products = () => {
   };
   return (
     <section className="product-div">
+      <div className="loader-div">{isLoading && <LoaderBig />}</div>
       <div className="filter-container">
         <input
           onChange={(e) => setSearch(e.target.value)}
@@ -47,7 +50,7 @@ const Products = () => {
             name="Bread"
             onChange={(e) => handleCategoryFilter(e.target.name)}
           />
-          <label>Bread</label>
+          <label htmlFor="Pastry">Bread</label>
         </div>
         <div className="filter-div">
           <input

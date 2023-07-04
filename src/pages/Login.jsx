@@ -7,6 +7,7 @@ import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { auth } from "../firebase/config";
 import { useNavigate } from "react-router-dom";
 import { GoogleAuthProvider } from "firebase/auth";
+import Loader from "../utils/Loader/Loader";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -90,7 +91,14 @@ const Login = () => {
           </Link>{" "}
           your password
         </h3>
-        <button>Login</button>
+        {isLoading ? (
+          <button disabled style={{ pointerEvents: "none", opacity: ".7" }}>
+            <Loader />
+          </button>
+        ) : (
+          <button>Login</button>
+        )}
+
         <button onClick={signInWithGoogle}>
           <FcGoogle /> Login with Google
         </button>

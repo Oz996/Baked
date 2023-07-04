@@ -3,8 +3,8 @@ import "./Form.scss";
 import { HiOutlineMail, HiOutlineKey } from "react-icons/hi";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/config";
-import Loader from "../components/Loader/Loader";
 import { useNavigate } from "react-router-dom";
+import Loader from "../utils/Loader/Loader";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -43,7 +43,6 @@ const Register = () => {
 
   return (
     <div className="form-wrapper">
-      {isLoading && <Loader />}
       <div className="baked">
         <img src="/images/logo.png" alt="" />
         <h1>
@@ -88,7 +87,13 @@ const Register = () => {
           />
         </div>
         {error && <p className="error">{error}</p>}
-        <button>Register</button>
+        {isLoading ? (
+          <button disabled style={{ pointerEvents: "none", opacity: ".7" }}>
+            <Loader />
+          </button>
+        ) : (
+          <button>Register</button>
+        )}
       </form>
     </div>
   );
