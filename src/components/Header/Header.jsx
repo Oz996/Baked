@@ -4,11 +4,12 @@ import { FaHome, FaShoppingCart } from "react-icons/fa";
 import { GiSlicedBread } from "react-icons/gi";
 import { HiUser, HiOutlineLogout } from "react-icons/hi";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "../firebase/config";
+import { auth } from "../../firebase/config";
 import { useDispatch, useSelector } from "react-redux";
-import { setActiveUser, removeActiveUser } from "../redux/slice/authSlice";
-import ShowOnLogin, { ShowOnLogout } from "./hiddenLink/hiddenLink";
-import CartPreview from "./CartPreview/CartPreview";
+import { setActiveUser, removeActiveUser } from "../../redux/slice/authSlice";
+import ShowOnLogin, { ShowOnLogout } from "../hiddenLink/hiddenLink";
+import CartPreview from "../CartPreview/CartPreview";
+import './Header.scss'
 
 const Header = () => {
   const [email, setEmail] = useState("");
@@ -61,7 +62,9 @@ const Header = () => {
         <div className="header-content">
           <div className="logo-div">
             <NavLink to="/">
-              <img src="/images/logo.png" alt="" />
+              <img src="/images/logo.png" alt="logo" />
+            </NavLink>
+            <NavLink to="/">
               <h2>
                 BAKED <br /> <span> .com </span>
               </h2>
@@ -69,7 +72,9 @@ const Header = () => {
           </div>
 
           <nav>
-            <NavLink to="/profile"> <span>{email}</span></NavLink>
+            <NavLink to="/profile">
+              <span>{email}</span>
+            </NavLink>
             <NavLink to="/">
               <FaHome />
               <span>Home</span>
@@ -84,7 +89,9 @@ const Header = () => {
               </NavLink>
             </ShowOnLogout>
             <ShowOnLogin>
-              <NavLink onClick={logoutUser}> <HiOutlineLogout/> <span>Logout</span> </NavLink>
+              <NavLink onClick={logoutUser}>
+                <HiOutlineLogout /> <span>Logout</span>{" "}
+              </NavLink>
             </ShowOnLogin>
 
             <FaShoppingCart className="cart-icon" onClick={handleCartClick} />

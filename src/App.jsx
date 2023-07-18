@@ -1,8 +1,7 @@
 import React from "react";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Products from "./pages/Products";
-import Home from "./pages/Home";
+import Products from "./pages/Products/Products";
 import NotFound from "./pages/NotFound";
 import WareDetails from "./pages/WareDetails";
 import Login from "./pages/Login";
@@ -18,7 +17,7 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Products/>} />
+          <Route path="/" element={<Products />} />
           <Route path="/products/:id" element={<WareDetails />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<Login />} />

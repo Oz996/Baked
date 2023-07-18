@@ -50,6 +50,7 @@ const Register = () => {
         </h1>
       </div>
       <form onSubmit={registerUser}>
+        <h2>Register</h2>
         <label htmlFor="email">Email:</label>
         <div className="form-input">
           <span>

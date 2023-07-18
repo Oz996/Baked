@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../../components/ProductCard";
 import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "../redux/slice/productSlice";
-import LoaderBig from "../utils/Loader/LoaderBig";
+import { getProducts } from "../../redux/slice/productSlice";
+import LoaderBig from "../../utils/Loader/LoaderBig";
+import './Products.scss'
 
 const Products = () => {
   const [search, setSearch] = useState("");

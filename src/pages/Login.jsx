@@ -13,11 +13,15 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
 
   const loginUser = (e) => {
     e.preventDefault();
+    if (email === "" || password === "") {
+      setError("Please fill out all the fields");
+    }
     setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -26,6 +30,9 @@ const Login = () => {
         navigate("/");
       })
       .catch((error) => {
+        if (email.length > 0 || password.length > 0) {
+          setError("User does not exist");
+        }
         setIsLoading(false);
         const errorCode = error.code;
         const errorMessage = error.message;
@@ -78,19 +85,20 @@ const Login = () => {
           />
         </div>
         <h3>
-          Not registered?{" "}
+          Not registered?
           <Link style={{ color: "#35A00F" }} to="/register">
             Register
-          </Link>{" "}
+          </Link>
           here
         </h3>
-        <h3>
-          Forgot password?{" "}
+        <h3 className="h3">
+          Forgot password?
           <Link style={{ color: "#35A00F" }} to="/reset">
             Reset
-          </Link>{" "}
+          </Link>
           your password
         </h3>
+        {error && <p className="error">{error}</p>}
         {isLoading ? (
           <button disabled style={{ pointerEvents: "none", opacity: ".7" }}>
             <Loader />
