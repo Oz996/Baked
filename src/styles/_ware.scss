@@ -100,7 +100,7 @@
     cursor: pointer;
 
     &:hover {
-      color: rgb(64, 148, 53);
+      color: $primary-hover;
       background-color: rgb(236, 236, 236);
       transition: 0.2s;
     }
@@ -136,13 +136,15 @@
   }
 
   .btn-ingredients {
-    background-color: $primary-color;
+    background-color: black;
+    border-radius: 1rem 1rem .3rem .3rem;
     color: white;
     padding: 0.5rem;
     cursor: pointer;
     padding-block: 1rem;
     margin-block: 0.5rem;
     border: none;
+    min-width: 20rem;
   }
 }
 .information-buttons {
@@ -174,24 +176,28 @@
 table {
   font-size: 1.6rem;
   color: white;
+  background-color: black;
   font-weight: bold;
-
   margin: 1rem;
   margin-top: 0;
+  border-radius: .5rem;
 }
 td {
-  border: 1px solid white;
+  border-bottom: 1px solid white;
   border-radius: 0.4rem;
   padding: 0.3rem;
 }
 
 .table-description {
-  color: black;
+  font-size: 1.8rem;
 }
 p.ingredients {
   font-size: 1.7rem;
   margin: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 0;
+  background-color: black;
+  padding: 1rem;
+  border-radius: .5rem;
 }
 
 @media (max-width: 900px) {
@@ -220,6 +226,7 @@ p.ingredients {
         align-items: center;
         width: 70vw;
         padding: 1.5rem;
+        margin-left: 5rem;
       }
     }
   }

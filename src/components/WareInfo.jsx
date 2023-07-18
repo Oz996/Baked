@@ -6,7 +6,8 @@ import { addToCart } from "../redux/slice/cartSlice";
 const Ware_info = ({ ware }) => {
   const [showNutrition, setShowNutrition] = useState(false);
   const [showIngredients, setShowIngredients] = useState(false);
-  const [show, setShow] = useState(false);
+  const [showIngredientsArrow, setShowIngredientsArrow] = useState(false);
+  const [showNutritionArrow, setShowNutritionArrow] = useState(false);
   const [quantity, setQuantity] = useState(1);
 
   const cartItems = useSelector((state) => state.cart);
@@ -16,10 +17,12 @@ const Ware_info = ({ ware }) => {
 
   const handleNutritionClick = () => {
     setShowNutrition((prev) => !prev);
+    setShowNutritionArrow((prev) => !prev);
   };
 
   const handleIngredientsClick = () => {
     setShowIngredients((prev) => !prev);
+    setShowIngredientsArrow((prev) => !prev);
   };
 
   const handleIncrement = (value) => {
@@ -29,9 +32,6 @@ const Ware_info = ({ ware }) => {
     if (quantity > 0) {
       setQuantity(quantity - 1);
     }
-  };
-  const handleArrowClick = () => {
-    setShow((prev) => !prev);
   };
 
   const handleAddToCart = (ware) => {
@@ -65,7 +65,7 @@ const Ware_info = ({ ware }) => {
           >
             Ingredients{" "}
             <img
-              className={`arrow ${show ? "rotate" : ""}`}
+              className={`arrow ${showIngredientsArrow ? "rotate" : ""}`}
               src={arrow}
               alt=""
             />
@@ -81,7 +81,7 @@ const Ware_info = ({ ware }) => {
           >
             Nutrition{" "}
             <img
-              className={`arrow ${show ? "rotate" : ""}`}
+              className={`arrow ${showNutritionArrow ? "rotate" : ""}`}
               src={arrow}
               alt=""
             />

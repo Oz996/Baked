@@ -67,10 +67,10 @@ const Cart = () => {
           <p>{item.name}</p>
           <div className="buttons">
             <button onClick={() => handleIncrement(item.id)}>+</button>
-            <p>{item.quantity}</p>
+            <p className="cart-quantity">{item.quantity}</p>
             <button onClick={() => handleDecrement(item.id)}>-</button>
           </div>
-          <p>€{calculateSubtotal(item)}</p>
+          <p className="cart-subtotal">€{calculateSubtotal(item)}</p>
         </div>
       ))}
       <p className="total">Total Price: €{calculateTotalPrice()}</p>

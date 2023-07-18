@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import "../../styles/colors";
 
 .product-div {
   display: grid;
@@ -68,12 +68,15 @@
   margin-top: -3rem;
 }
 .hovered {
-  background-color: rgb(190, 239, 190);
-  transition: 1s;
-  border-radius: 0.4rem;
   height: 100%;
-  display: grid;
-  border-radius: 0.8rem;
+
+  &:hover {
+    background-color: rgb(190, 239, 190);
+    transition: ease-in-out 0.3s;
+    border-radius: 0.4rem;
+    display: grid;
+    border-radius: 0.8rem;
+  }
 }
 .hover-image {
   height: 10rem;
