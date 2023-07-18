@@ -1,7 +1,7 @@
 header {
   background-color: $primary-color;
   height: 11rem;
-  width: 100vw;
+  width: 100%;
 }
 
 header h2 {
@@ -19,10 +19,10 @@ header h2 {
   }
 }
 header img {
-  width: 18rem;
+  width: 16.5rem;
   position: absolute;
-  left: 3.5rem;
-  top: -3.3rem;
+  left: 5rem;
+  top: -2.5rem;
 }
 
 .logo-div {
