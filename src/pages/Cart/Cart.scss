@@ -1,5 +1,28 @@
-@import '../../styles/colors';
+@import "../../styles/colors";
 
+.cart-empty{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  gap: 3rem;
+  span{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $primary-color;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
 .cart-container {
   width: 65%;
   margin: 0 auto;
@@ -12,15 +35,14 @@
   h3 {
     font-size: 2rem;
   }
-
   p {
     font-size: 2rem;
   }
-  .cart-quantity{
+  .cart-quantity {
     min-width: 2rem;
     text-align: center;
   }
-  .cart-subtotal{
+  .cart-subtotal {
     min-width: 1rem;
   }
   .total {
@@ -59,7 +81,7 @@
       button {
         border: none;
         background-color: $primary-color;
-        border-radius: .3rem;
+        border-radius: 0.3rem;
         color: white;
         padding: 0.6rem 1rem;
         min-width: 1.5vw;
@@ -71,9 +93,8 @@
 }
 
 @media (max-width: 900px) {
-  .cart-container{
-
-    .cart{
+  .cart-container {
+    .cart {
       display: flex;
       gap: 1rem;
       flex-direction: column;

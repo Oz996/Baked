@@ -7,7 +7,8 @@ import {
 } from "../../redux/slice/cartSlice";
 import axios from "axios";
 import OrderModal from "../../components/OrderModal/OrderModal";
-
+import { BsCartX } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const [showModal, setShowModal] = useState(false);
@@ -49,8 +50,10 @@ const Cart = () => {
 
   if (cartItems.length === 0) {
     return (
-      <div className="cart-container">
-        <p>Cart is empty</p>
+      <div className="cart-empty">
+        <BsCartX size={60}/>
+        <span>Cart is empty</span>
+        <Link to="/">Start browsing</Link>
       </div>
     );
   }
@@ -74,7 +77,8 @@ const Cart = () => {
         </div>
       ))}
       <p className="total">Total Price: €{calculateTotalPrice()}</p>
-      <button className="checkout"
+      <button
+        className="checkout"
         onClick={() => {
           handleCheckout();
           handleModalClick();

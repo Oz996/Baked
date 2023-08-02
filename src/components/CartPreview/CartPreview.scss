@@ -8,7 +8,7 @@
   background-color: white;
   position: absolute;
   top: 5rem;
-  right: 20rem;
+  right: 24rem;
   overflow: auto;
 
   .exit-modal {
@@ -23,6 +23,7 @@
     margin-top: 2rem;
     display: flex;
     justify-content: center;
+    font-size: 1.8rem;
   }
   .action-buttons {
     display: flex;
@@ -85,5 +86,11 @@
         }
       }
     }
+  }
+}
+@media (max-width: 900px) {
+  .cart-preview {
+    position: absolute;
+    right: 10%;
   }
 }

@@ -11,6 +11,10 @@ const Product = ({ ware }) => {
 
   const dispatch = useDispatch();
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   const handleMouseEnter = () => {
     setIsHovering(true);
   };
@@ -32,16 +36,16 @@ const Product = ({ ware }) => {
       {isHovering ? (
         <div className="hovered">
           <p className="hover-description">
-            {ware.description} {`${ware.weight} g`}
+            {ware.description} {ware.weight} g
           </p>
           <div className="hover-div">
-            <p className="hover-weight">{`€${ware.price}`}</p>
+            <p className="hover-weight">€${ware.price}</p>
             <img className="hover-image" src={ware.image} alt="" />
           </div>
           <div className="hover-buttons">
             <button className="hover-button" onClick={() => handleAddToCart(ware)}>Add Ware</button>
 
-            <Link to={`/products/${ware.id}`}>
+            <Link to={`/products/${ware.id}`} onClick={scrollToTop}>
               <button className="hover-button hover1">More Info</button>
             </Link>
           </div>
@@ -50,8 +54,8 @@ const Product = ({ ware }) => {
         <>
           <img className="ware-image" src={ware.image} alt={ware.name} />
           <h3 className="ware-name">{ware.name}</h3>
-          <p className="ware-weight"> {ware.weight}</p>
-          <p className="ware-price">{`€${ware.price}`}</p>
+          <p className="ware-weight"> {ware.weight} g</p>
+          <p className="ware-price">€{ware.price}</p>
           <div className="ware-buttons">
             <button className="btn-green">
               Add Ware

@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setActiveUser, removeActiveUser } from "../../redux/slice/authSlice";
 import ShowOnLogin, { ShowOnLogout } from "../hiddenLink/hiddenLink";
 import CartPreview from "../CartPreview/CartPreview";
-import './Header.scss'
+import "./Header.scss";
 
 const Header = () => {
   const [email, setEmail] = useState("");
@@ -19,7 +19,7 @@ const Header = () => {
     ? "header-details"
     : "";
 
-  const cartItems = useSelector((state) => state.cart.cartItems);
+  const cartItems = useSelector((state) => state.cart.cartItems || []);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -90,11 +90,15 @@ const Header = () => {
             </ShowOnLogout>
             <ShowOnLogin>
               <NavLink onClick={logoutUser}>
-                <HiOutlineLogout /> <span>Logout</span>{" "}
+                <HiOutlineLogout /> <span>Logout</span>
               </NavLink>
             </ShowOnLogin>
 
             <FaShoppingCart className="cart-icon" onClick={handleCartClick} />
+            {cartItems.length > 0 && (
+              <div className="cart-preview-quantity">{cartItems.length}</div>
+            )}
+
             {showCart && <CartPreview setShowCart={setShowCart} />}
             <div className="cart-length"></div>
           </nav>

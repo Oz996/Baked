@@ -1,29 +1,15 @@
 import { useState } from "react";
-import arrow from "/images/arrow.png";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/slice/cartSlice";
 
 const Ware_info = ({ ware }) => {
-  const [showNutrition, setShowNutrition] = useState(false);
-  const [showIngredients, setShowIngredients] = useState(false);
-  const [showIngredientsArrow, setShowIngredientsArrow] = useState(false);
-  const [showNutritionArrow, setShowNutritionArrow] = useState(false);
+  const [ingredientDisplay, setIngredientDisplay] = useState(0);
   const [quantity, setQuantity] = useState(1);
 
   const cartItems = useSelector((state) => state.cart);
   console.log(cartItems);
 
   const dispatch = useDispatch();
-
-  const handleNutritionClick = () => {
-    setShowNutrition((prev) => !prev);
-    setShowNutritionArrow((prev) => !prev);
-  };
-
-  const handleIngredientsClick = () => {
-    setShowIngredients((prev) => !prev);
-    setShowIngredientsArrow((prev) => !prev);
-  };
 
   const handleIncrement = (value) => {
     setQuantity(quantity + 1);
@@ -58,36 +44,21 @@ const Ware_info = ({ ware }) => {
         <div className="information-buttons">
           <button
             className="btn-ingredients"
-            onClick={() => {
-              handleIngredientsClick();
-              handleArrowClick();
-            }}
+            onClick={() => setIngredientDisplay(1)}
           >
-            Ingredients{" "}
-            <img
-              className={`arrow ${showIngredientsArrow ? "rotate" : ""}`}
-              src={arrow}
-              alt=""
-            />
+            Ingredients
           </button>
-          {showIngredients && <p className="ingredients">{ware.ingredients}</p>}
-
           <button
             className="btn-ingredients"
-            onClick={() => {
-              handleNutritionClick();
-              handleArrowClick();
-            }}
+            onClick={() => setIngredientDisplay(2)}
           >
-            Nutrition{" "}
-            <img
-              className={`arrow ${showNutritionArrow ? "rotate" : ""}`}
-              src={arrow}
-              alt=""
-            />
+            Nutrition
           </button>
-
-          {showNutrition && (
+        </div>
+        <div className="display-div">
+          {ingredientDisplay === 1 ? (
+            <p className="ingredients">{ware.ingredients}</p>
+          ) : ingredientDisplay === 2 ? (
             <table>
               <tr>
                 <td className="table-description">Nutrition</td>
@@ -124,7 +95,7 @@ const Ware_info = ({ ware }) => {
                 ))}
               </tbody>
             </table>
-          )}
+          ) : null}
         </div>
       </div>
     </>

@@ -53,6 +53,19 @@ header {
       gap: 0.5rem;
       cursor: pointer;
     }
+    .cart-preview-quantity{
+      position: relative;
+      right: 3.5rem;
+
+      padding: 1px;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.6rem;
+      text-align: center;
+      background-color: black;
+      border-radius: 1rem;
+      color: white;
+    }
   }
 
   @media (max-width: 900px) {
@@ -71,7 +84,8 @@ header {
         }
       }
       nav {
-        justify-content: center;
+        justify-content: space-around;
+        gap: 3.5rem;
         span {
           display: none;
         }

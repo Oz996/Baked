@@ -71,7 +71,7 @@ const CartPreview = ({ setShowCart }) => {
           </button>
         </div>
       ) : (
-        ""
+        null
       )}
     </div>
   );

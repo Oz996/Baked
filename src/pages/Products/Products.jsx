@@ -3,7 +3,7 @@ import ProductCard from "../../components/ProductCard";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../redux/slice/productSlice";
 import LoaderBig from "../../utils/Loader/LoaderBig";
-import './Products.scss'
+import "./Products.scss";
 
 const Products = () => {
   const [search, setSearch] = useState("");
@@ -11,6 +11,13 @@ const Products = () => {
   const [brandFilter, setBrandFilter] = useState("");
   const { products } = useSelector((state) => state.products);
   const isLoading = useSelector((state) => state.products.isLoading);
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    };
+    scrollToTop();
+  }, []);
 
   const dispatch = useDispatch();
   useEffect(() => {
