@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/slice/cartSlice";
+import { motion } from "framer-motion";
 
 const Ware_info = ({ ware }) => {
   const [ingredientDisplay, setIngredientDisplay] = useState(0);
@@ -57,9 +58,15 @@ const Ware_info = ({ ware }) => {
         </div>
         <div className="display-div">
           {ingredientDisplay === 1 ? (
-            <p className="ingredients">{ware.ingredients}</p>
+            <motion.p
+              className="ingredients"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+            >
+              {ware.ingredients}
+            </motion.p>
           ) : ingredientDisplay === 2 ? (
-            <table>
+            <motion.table initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
               <tr>
                 <td className="table-description">Nutrition</td>
                 <td className="table-description">Per 100g </td>
@@ -94,7 +101,7 @@ const Ware_info = ({ ware }) => {
                   </>
                 ))}
               </tbody>
-            </table>
+            </motion.table>
           ) : null}
         </div>
       </div>
