@@ -29,6 +29,9 @@
 
     .cross {
       cursor: pointer;
+
+      margin-top: 1rem;
+      margin-right: 1rem;
     }
   }
   .empty {
@@ -83,14 +86,28 @@
       gap: 4rem;
 
       img {
-        width: 5vh;
+        width: 3.2vw;
+        height: 6.3vh;
+        align-self: self-end;
         position: relative;
+        top: 1rem;
       }
 
       p {
         font-size: 1.8rem;
       }
       .cart-buttons {
+        .cart-ware-name {
+          color: black;
+          width: 20rem;
+          transition: 0.2s ease;
+          font-size: 1.6rem;
+          font-weight: 600;
+          font-family: poppins;
+          &:hover {
+            color: $primary-color;
+          }
+        }
         .buttons {
           display: flex;
           gap: 1rem;

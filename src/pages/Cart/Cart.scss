@@ -24,7 +24,7 @@
   }
 }
 .cart-container {
-  width: 65%;
+  width: 55%;
   margin: 0 auto;
 
   h1 {
@@ -54,6 +54,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    width: 75rem;
   }
   .checkout {
     border: none;
@@ -70,7 +71,12 @@
     grid-template-columns: 0.5fr 2fr 2fr 0.1fr;
     padding: 1rem 0;
     margin-block: 1rem;
-  
+    
+    .cart-div{
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+    }
     img {
       height: 10vh;
     }
@@ -98,6 +104,10 @@
       display: flex;
       gap: 1rem;
       flex-direction: column;
+      .cart-div{
+        flex-direction: column;
+        gap: 1.5rem;
+      }
     }
   }
 }

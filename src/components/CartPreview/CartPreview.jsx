@@ -72,9 +72,19 @@ const CartPreview = ({ setShowCart }) => {
           <div className="cart-contents">
             {cartItems.map((item) => (
               <div className="cart" key={item.id}>
-                <img src={item.image} alt={item.name} />
+                <Link
+                  to={`/products/${item.id}`}
+                  onClick={() => setShowCart(false)}
+                >
+                  <img src={item.image} alt={item.name} />
+                </Link>
                 <div className="cart-buttons">
-                  <p>{item.name}</p>
+                  <Link
+                    to={`/products/${item.id}`}
+                    onClick={() => setShowCart(false)}
+                  >
+                    <p className="cart-ware-name">{item.name}</p>
+                  </Link>
                   <div className="buttons">
                     <button onClick={() => handleDecrement(item.id)}>-</button>
                     <p>{item.quantity}</p>

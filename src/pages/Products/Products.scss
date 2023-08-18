@@ -135,7 +135,9 @@
   width: 15vw;
   font-family: "Poppins", sans-serif;
   grid-row: span 2;
-
+  .filter-div{
+    margin-top: 1.5rem;
+  }
   .btn-filter {
     border: none;
     padding: 1rem 6rem;
@@ -151,6 +153,11 @@
   }
   .btn-filter:active {
     background-color: rgb(88, 85, 85);
+  }
+  select{
+    padding: .8rem 1rem;
+    width: 55%;
+    font-size: 1.5rem;
   }
   input {
     font-size: 1rem;

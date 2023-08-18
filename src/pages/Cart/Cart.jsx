@@ -68,12 +68,14 @@ const Cart = () => {
         <div className="cart" key={item.id}>
           <img src={item.image} alt={item.name} />
           <p>{item.name}</p>
+          <div className="cart-div">
           <div className="buttons">
             <button onClick={() => handleIncrement(item.id)}>+</button>
             <p className="cart-quantity">{item.quantity}</p>
             <button onClick={() => handleDecrement(item.id)}>-</button>
           </div>
           <p className="cart-subtotal">€{calculateSubtotal(item)}</p>
+        </div>
         </div>
       ))}
       <p className="total">Total Price: €{calculateTotalPrice()}</p>

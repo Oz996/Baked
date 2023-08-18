@@ -51,27 +51,30 @@ const Products = () => {
           placeholder="Search..."
         />
         <h1>Filters</h1>
-        <h2>Category</h2>
+
+        <select
+          name="Category"
+          id="Category"
+          onChange={(e) => handleCategoryFilter(e.target.value)}
+        >
+          <option value="">Category</option>
+          <option value="Bread">Bread</option>
+          <option value="Pastry">Pastry</option>
+        </select>
         <div className="filter-div">
-          <input
-            type="checkbox"
-            name="Bread"
-            onChange={(e) => handleCategoryFilter(e.target.name)}
-          />
-          <label htmlFor="Pastry">Bread</label>
-        </div>
-        <div className="filter-div">
-          <input
-            type="checkbox"
-            name="Pastry"
-            onChange={(e) => handleCategoryFilter(e.target.name)}
-          />
-          <label>Pastry</label>
-        </div>
-        <h2> Manufacturer </h2>
-        <hr />
-        <div className="filter-div">
-          <input
+          <select
+            name="Manufacturer"
+            id="Manufacturer"
+            onChange={(e) => handleBrandFilter(e.target.value)}
+          >
+            <option value="">Manufacturer</option>
+            <option value="Abbott's Bakery">Abbott's Bakery</option>
+            <option value="9 Grain">9 Grain</option>
+            <option value="Wonder White">Wonder White</option>
+            <option value="Great Temptations">Great Temptations</option>
+            <option value="Marcels">Marcels</option>
+          </select>
+          {/* <input
             type="checkbox"
             name="Abbott's Bakery"
             onChange={(e) => handleBrandFilter(e.target.name)}
@@ -108,7 +111,7 @@ const Products = () => {
             name="Marcels"
             onChange={(e) => handleBrandFilter(e.target.name)}
           />
-          <label>Marcels</label>
+          <label>Marcels</label> */}
         </div>
       </div>
       {products

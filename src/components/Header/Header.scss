@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import "../../styles/colors";
 
 header {
   background-color: $primary-color;
@@ -19,9 +19,9 @@ header {
     font-weight: 700;
     font-size: 3rem;
     line-height: 1.5rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
-  a{
+  a {
     text-decoration: none;
   }
   .logo-div {
@@ -30,13 +30,13 @@ header {
     span {
       font-size: 2rem;
     }
-    h2{
+    h2 {
       margin-left: -1rem;
       margin-top: 1rem;
     }
     img {
       width: 12rem;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
   }
 
@@ -53,10 +53,9 @@ header {
       gap: 0.5rem;
       cursor: pointer;
     }
-    .cart-preview-quantity{
-      position: relative;
-      right: 3.5rem;
-
+    .cart-preview-quantity {
+      position: absolute;
+      right: 10.5%;
       padding: 1px;
       width: 2rem;
       height: 2rem;
