@@ -6,15 +6,14 @@
   background-image: url("/images/Abbotts3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
   span {
     color: white;
     font-size: 2.6rem;
   }
-  .carousel-button{
+  .carousel-button {
     position: relative;
-    bottom: -6rem;
-    left: -10rem;
+    top: 39rem;
+    left: 27%;
     padding: 2rem;
   }
 }
@@ -56,27 +55,24 @@
   gap: 1.5rem;
   font-family: "Poppins";
   position: relative;
-  top: 65%;
-  text-align: center;
+
 }
 .carousel-two-inner {
   display: flex;
-  //   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
   font-family: "Poppins";
   position: relative;
   top: 87.5%;
-  text-align: center;
-  .carousel-button{
+  .carousel-button {
     background-color: white;
     color: black;
-    &:hover{
-        background-color: $primary-hover;
-        color: white;
+    &:hover {
+      background-color: $primary-hover;
+      color: white;
     }
   }
-  span{
+  span {
     font-size: 2.5rem;
     align-self: center;
   }
@@ -89,7 +85,6 @@
   left: 0;
   height: 8rem;
   width: 100%;
-
 }
 .carousel-two-overlay {
   background-color: black;
