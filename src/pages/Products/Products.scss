@@ -36,7 +36,7 @@
   .ware-buttons {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 90%;
     margin: auto;
 
     button {
@@ -103,7 +103,7 @@
 .hover-buttons {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 90%;
   margin: auto;
   Link {
     text-decoration: none;
@@ -135,7 +135,8 @@
   width: 15vw;
   font-family: "Poppins", sans-serif;
   grid-row: span 2;
-  .filter-div{
+  margin-top: 1rem;
+  .filter-div {
     margin-top: 1.5rem;
   }
   .btn-filter {
@@ -154,13 +155,26 @@
   .btn-filter:active {
     background-color: rgb(88, 85, 85);
   }
-  select{
-    padding: .8rem 1rem;
-    width: 55%;
+  select {
+    padding: 0.8rem 1rem;
+    width: 100%;
     font-size: 1.5rem;
+    &:hover,
+    &:active {
+      border-color: $primary-color;
+    }
+  }
+  .select-div {
   }
   input {
     font-size: 1rem;
+    padding: 1.2rem !important;
+    border-radius: 0rem !important;
+    &:focus,
+    &:active {
+      border-color: $primary-color !important;
+      outline: none !important;
+    }
   }
   label {
     font-size: 1.6rem;

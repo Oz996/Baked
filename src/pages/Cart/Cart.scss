@@ -24,7 +24,7 @@
   }
 }
 .cart-container {
-  width: 55%;
+  width: 80rem;
   margin: 0 auto;
 
   h1 {
@@ -54,7 +54,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 75rem;
+    width: 77rem;
+    border-bottom: 1px solid rgb(212, 212, 212);
   }
   .checkout {
     border: none;
@@ -68,7 +69,7 @@
   .cart {
     display: grid;
     align-items: center;
-    grid-template-columns: 0.5fr 2fr 2fr 0.1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     padding: 1rem 0;
     margin-block: 1rem;
     

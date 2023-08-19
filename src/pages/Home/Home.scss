@@ -1,0 +1,103 @@
+@import "../../styles/colors";
+
+.carousel-one {
+  height: 50rem;
+  width: 100%;
+  background-image: url("/images/Abbotts3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  span {
+    color: white;
+    font-size: 2.6rem;
+  }
+  .carousel-button{
+    position: relative;
+    bottom: -6rem;
+    left: -10rem;
+    padding: 2rem;
+  }
+}
+.carousel-two {
+  background-image: url("/images/Abbotts4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  height: 50rem;
+  width: 100%;
+  span {
+    color: white;
+    font-size: 2.6rem;
+  }
+}
+.carousel-container {
+  width: 50%;
+  margin: 0 auto;
+}
+.carousel-button {
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  min-width: 20%;
+  padding: 1.5rem 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.2s;
+  align-self: center;
+  cursor: pointer;
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+.carousel-one-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: "Poppins";
+  position: relative;
+  top: 65%;
+  text-align: center;
+}
+.carousel-two-inner {
+  display: flex;
+  //   flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  font-family: "Poppins";
+  position: relative;
+  top: 87.5%;
+  text-align: center;
+  .carousel-button{
+    background-color: white;
+    color: black;
+    &:hover{
+        background-color: $primary-hover;
+        color: white;
+    }
+  }
+  span{
+    font-size: 2.5rem;
+    align-self: center;
+  }
+}
+.carousel-one-overlay {
+  background-color: black;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+
+}
+.carousel-two-overlay {
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 4.8rem;
+  left: 25rem;
+  width: 45rem;
+  height: 15rem;
+  border-radius: 1rem;
+}

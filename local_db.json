@@ -14,6 +14,7 @@
       "thumbnail4": "/images/ware1.3.png",
       "category": "Bread",
       "price": 5,
+      "new": true,
       "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
       "nutrition": [
         {
@@ -40,6 +41,7 @@
       "thumbnail4": "/images/ware2.3.png",
       "category": "Bread",
       "price": 5,
+      "new": true,
       "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
       "nutrition": [
         {
@@ -66,6 +68,7 @@
       "thumbnail4": "/images/ware3.3.png",
       "category": "Bread",
       "price": 6,
+      "new": true,
       "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
       "nutrition": [
         {
@@ -170,6 +173,7 @@
       "thumbnail4": "/images/ware7.png",
       "category": "Pastry",
       "price": 7,
+      "new": true,
       "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
       "nutrition": [
         {
@@ -196,6 +200,7 @@
       "thumbnail4": "/images/ware8.png",
       "category": "Pastry",
       "price": 7,
+      "new": true,
       "ingredients": "Wheat Flour, Water, Baker's Yeast, Seeds (5%) (Sunflower Seeds, Poppy Seed, Linseed, Pumpkin Seeds (0.7%)), Mixed Grains (3.5%) (Kibbled Rye, Kibbled Wheat, Kibbled Triticale, Buckwheat, Kibbled Corn, Rolled Oats, Kibbled Barley), Dried Wheat Sourdough (3%), Wheat Gluten, Canola Oil, Vinegar, Kibbled Soy, Iodised Salt, Soy Flour, Emulsifiers (471, 472e, 481), Vitamins (Thiamin, Folic Acid).",
       "nutrition": [
         {

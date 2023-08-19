@@ -50,68 +50,30 @@ const Products = () => {
           name="search"
           placeholder="Search..."
         />
-        <h1>Filters</h1>
-
-        <select
-          name="Category"
-          id="Category"
-          onChange={(e) => handleCategoryFilter(e.target.value)}
-        >
-          <option value="">Category</option>
-          <option value="Bread">Bread</option>
-          <option value="Pastry">Pastry</option>
-        </select>
-        <div className="filter-div">
+        <div className="select-div">
           <select
-            name="Manufacturer"
-            id="Manufacturer"
-            onChange={(e) => handleBrandFilter(e.target.value)}
+            name="Category"
+            id="Category"
+            onChange={(e) => handleCategoryFilter(e.target.value)}
           >
-            <option value="">Manufacturer</option>
-            <option value="Abbott's Bakery">Abbott's Bakery</option>
-            <option value="9 Grain">9 Grain</option>
-            <option value="Wonder White">Wonder White</option>
-            <option value="Great Temptations">Great Temptations</option>
-            <option value="Marcels">Marcels</option>
+            <option value="">Category</option>
+            <option value="Bread">Bread</option>
+            <option value="Pastry">Pastry</option>
           </select>
-          {/* <input
-            type="checkbox"
-            name="Abbott's Bakery"
-            onChange={(e) => handleBrandFilter(e.target.name)}
-          />
-          <label>Abbott's Bakery</label>
-        </div>
-        <div className="filter-div">
-          <input
-            type="checkbox"
-            name="9 Grain"
-            onChange={(e) => handleBrandFilter(e.target.name)}
-          />
-          <label>9 Grain</label>
-        </div>
-        <div className="filter-div">
-          <input
-            type="checkbox"
-            name="Wonder White"
-            onChange={(e) => handleBrandFilter(e.target.name)}
-          />
-          <label>Wonder White</label>
-        </div>
-        <div className="filter-div">
-          <input
-            type="checkbox"
-            name="Great Temptations"
-            onChange={(e) => handleBrandFilter(e.target.name)}
-          />
-          <label>Great Temptations</label>
-        </div>
-        <div className="filter-div">
-          <input
-            type="checkbox"
-            name="Marcels"
-            onChange={(e) => handleBrandFilter(e.target.name)}
-          />
-          <label>Marcels</label> */}
+          <div className="filter-div">
+            <select
+              name="Manufacturer"
+              id="Manufacturer"
+              onChange={(e) => handleBrandFilter(e.target.value)}
+            >
+              <option value="">Manufacturer</option>
+              <option value="Abbott's Bakery">Abbott's Bakery</option>
+              <option value="9 Grain">9 Grain</option>
+              <option value="Wonder White">Wonder White</option>
+              <option value="Great Temptations">Great Temptations</option>
+              <option value="Marcels">Marcels</option>
+            </select>
+          </div>
         </div>
       </div>
       {products

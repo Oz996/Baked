@@ -2,7 +2,7 @@
 
 header {
   background-color: $primary-color;
-  height: 8rem;
+  height: 6rem;
   width: 100%;
 
   .header-content {
@@ -35,13 +35,14 @@ header {
       margin-top: 1rem;
     }
     img {
-      width: 12rem;
+      width: 9rem;
       margin-top: 0.5rem;
     }
   }
 
   nav {
     display: flex;
+    align-items: center;
     gap: 1.5rem;
 
     a,
@@ -55,6 +56,7 @@ header {
     }
     .cart-preview-quantity {
       position: absolute;
+      top: 1rem;
       right: 10.5%;
       padding: 1px;
       width: 2rem;

@@ -1,0 +1,72 @@
+@import "../../styles/colors";
+
+.latest {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Poppins";
+  margin-top: 20rem;
+
+  h1 {
+    position: absolute;
+    bottom: 25rem;
+    left: 43.2%;
+    font-size: 3.5rem;
+  }
+  .latest-card {
+    outline: 1px solid rgb(230, 230, 230);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+
+    img {
+      width: 20rem;
+      height: 20rem;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    span {
+      font-size: 1.6rem;
+    }
+    .latest-buttons {
+      display: flex;
+      flex-direction: column;
+      button {
+        padding: 1rem 2.3rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 0.8rem;
+        outline: 1px solid rgb(203, 203, 203);
+        background-color: white;
+        font-weight: bold;
+        margin-block: 0.5rem;
+        width: 100%;
+      }
+      .green-button {
+        background-color: $primary-color;
+        color: white;
+        outline: none;
+        border: none;
+        transition: background-color 0.2s;
+        &:hover {
+          background-color: $primary-hover;
+        }
+      }
+    }
+  }
+}
+.loader-latest{
+    display: flex;
+    width: 150rem;
+    height: 50rem;
+    margin-top: 3rem;
+    justify-content: center;
+
+}

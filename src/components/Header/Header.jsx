@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import { FaHome, FaShoppingCart } from "react-icons/fa";
+import { FaHome, FaShoppingCart, FaUser } from "react-icons/fa";
 import { GiSlicedBread } from "react-icons/gi";
 import { HiUser, HiOutlineLogout } from "react-icons/hi";
 import { onAuthStateChanged, signOut } from "firebase/auth";
@@ -73,14 +73,16 @@ const Header = () => {
 
           <nav>
             <NavLink to="/profile">
-              <span>{email}</span>
+              <FaUser size={20}/>
+              <span>Profile</span>
             </NavLink>
             <NavLink to="/">
               <FaHome />
               <span>Home</span>
             </NavLink>
-            <NavLink to="/">
-              <GiSlicedBread /> <span>Products</span>
+            <NavLink to="/products">
+              <GiSlicedBread />
+              <span>Products</span>
             </NavLink>
             <ShowOnLogout>
               <NavLink to="/login">

@@ -59,7 +59,7 @@ const CartPreview = ({ setShowCart }) => {
         <div className="exit-modal">
           <RxCross2
             className="cross"
-            size={22}
+            size={25}
             onClick={() => setShowCart(false)}
           />
         </div>

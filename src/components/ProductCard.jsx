@@ -60,7 +60,7 @@ const Product = ({ ware }) => {
             <button className="btn-green">
               Add Ware
             </button>
-            <button>More info</button>
+            <button>More Info</button>
           </div>
         </>
       )}

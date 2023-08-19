@@ -29,9 +29,13 @@
 
     .cross {
       cursor: pointer;
-
       margin-top: 1rem;
       margin-right: 1rem;
+      transition: 0.2s;
+      border-radius: 1.2rem;
+      &:hover {
+        background-color: rgb(225, 225, 225);
+      }
     }
   }
   .empty {
@@ -79,7 +83,7 @@
   }
   .cart-contents {
     .cart {
-      margin: 1rem;
+      margin-left: -1rem;
       padding-block: 3rem;
       padding-inline: 5rem;
       display: flex;
@@ -99,7 +103,6 @@
       .cart-buttons {
         .cart-ware-name {
           color: black;
-          width: 20rem;
           transition: 0.2s ease;
           font-size: 1.6rem;
           font-weight: 600;
@@ -132,6 +135,10 @@
             left: 4.5rem;
             align-self: center;
             cursor: pointer;
+            transition: color .2s;
+            &:hover{
+              color: red;
+            }
           }
         }
       }
