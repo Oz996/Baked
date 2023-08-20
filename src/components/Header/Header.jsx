@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { FaHome, FaShoppingCart, FaUser } from "react-icons/fa";
-import { GiSlicedBread } from "react-icons/gi";
+import { GiSlicedBread, GiHamburgerMenu } from "react-icons/gi";
 import { HiUser, HiOutlineLogout } from "react-icons/hi";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../../firebase/config";
@@ -9,11 +9,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { setActiveUser, removeActiveUser } from "../../redux/slice/authSlice";
 import ShowOnLogin, { ShowOnLogout } from "../hiddenLink/hiddenLink";
 import CartPreview from "../CartPreview/CartPreview";
+import { motion } from "framer-motion";
 import "./Header.scss";
 
 const Header = () => {
   const [email, setEmail] = useState("");
   const [showCart, setShowCart] = useState(false);
+  const [displayHamburger, setDisplayHamburger] = useState(false);
   const location = useLocation();
   const headerClass = location.pathname.includes("/products/")
     ? "header-details"
@@ -70,10 +72,14 @@ const Header = () => {
               </h2>
             </NavLink>
           </div>
-
-          <nav>
+          <GiHamburgerMenu
+            size={25}
+            className="hamburger"
+            onClick={() => setDisplayHamburger((prev) => !prev)}
+          />
+          <nav className={displayHamburger && "show-nav"}>
             <NavLink to="/profile">
-              <FaUser size={20}/>
+              <FaUser size={20} />
               <span>Profile</span>
             </NavLink>
             <NavLink to="/">
@@ -104,6 +110,11 @@ const Header = () => {
             {showCart && <CartPreview setShowCart={setShowCart} />}
             <div className="cart-length"></div>
           </nav>
+          <motion.div
+            className={`hamburger-div ${displayHamburger && "show"}`}
+            initial={{ right: -37 }}
+            animate={{ right: 0 }}
+          ></motion.div>
         </div>
       </header>
     </>

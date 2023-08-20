@@ -4,6 +4,7 @@ header {
   background-color: $primary-color;
   height: 6rem;
   width: 100%;
+  position: relative;
 
   .header-content {
     display: flex;
@@ -68,8 +69,63 @@ header {
       color: white;
     }
   }
+  .hamburger-div {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .show-nav {
+    display: block;
+    flex-direction: column;
+    position: relative;
+    align-items: start;
+    right: 0rem;
+    top: 20rem;
+    z-index: 2;
+  }
+  .hamburger {
+    display: none;
+  }
 
-  @media (max-width: 900px) {
+  @media screen and (max-width: 1134px) {
+    .hamburger-div {
+      width: 30rem;
+      max-height: 40rem;
+      min-height: 7rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.15);
+      background-color: white;
+      position: fixed;
+      top: 0;
+      right: -37rem;
+      min-height: 100vh;
+      overflow: auto;
+      z-index: 1;
+    }
+    .hamburger {
+      display: block;
+      color: white;
+      cursor: pointer;
+    }
+    nav {
+      display: none;
+      a,
+      .cart-icon {
+        color: $primary-color;
+      }
+      .cart-icon {
+        align-self: center;
+      }
+      a {
+        border-bottom: 1px solid $primary-color;
+        width: 100%;
+      }
+      .cart-preview-quantity {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 712px) {
     .header-content {
       .logo-div {
         display: none;

@@ -32,6 +32,12 @@
 .carousel-container {
   width: 50%;
   margin: 0 auto;
+  h1 {
+    position: relative;
+    top: 9vh;
+    left: 20vw;
+    font-size: 3.5rem;
+  }
 }
 .carousel-button {
   background-color: $primary-color;
@@ -95,4 +101,18 @@
   width: 45rem;
   height: 15rem;
   border-radius: 1rem;
+}
+@media screen and (max-width: 1134px) {
+  .carousel-container {
+    width: 90%;
+  }
+  .carousel-one{
+
+    .carousel-button{
+      display: none;
+    }
+  } 
+}
+@media screen and (max-width: 712px) {
+
 }

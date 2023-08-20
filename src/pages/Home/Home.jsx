@@ -58,10 +58,10 @@ const Home = () => {
               </div>
             </div>
           </Flickity>
+        <h1>Latest Products</h1>
         </div>
       </main>
       <section className="latest">
-        <h1>Latest Products</h1>
         {isLoading && (
           <div className="loader-latest">
             <LoaderBig />
