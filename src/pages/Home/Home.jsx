@@ -38,27 +38,34 @@ const Home = () => {
         <div className="carousel-container">
           <Flickity options={flickityOptions}>
             <div className="carousel-one">
-              {/* <div className="carousel-one-overlay" /> */}
-              <div className="carousel-one-inner">
-                {/* <span>Bread For Every Occasion</span> */}
-                <Link to="/products">
-                  <button className="carousel-button btn-one">
-                    Start Browsing
-                  </button>
-                </Link>
-              </div>
-            </div>
-            <div className="carousel-two">
-              <div className="carousel-one-overlay" />
-              <div className="carousel-two-inner">
+              <div className="carousel-overlay" />
+              <div className="carousel-inner">
                 <span>Bread For Every Occasion</span>
                 <Link to="/products">
                   <button className="carousel-button">Start Browsing</button>
                 </Link>
               </div>
             </div>
+            <div className="carousel-two">
+              <div className="carousel-overlay" />
+              <div className="carousel-inner">
+                <span>Unlimited Creativity</span>
+                <Link to="/products">
+                  <button className="carousel-button">Start Browsing</button>
+                </Link>
+              </div>
+            </div>
+            <div className="carousel-three">
+              <div className="carousel-overlay" />
+              <div className="carousel-inner">
+                <span>Lorem, ipsum dolor.</span>
+                <Link to="/products">
+                  <button className="carousel-button">Start Browsing</button>
+                </Link>
+              </div>
+            </div>
           </Flickity>
-        <h1>Latest Products</h1>
+          <h1>Latest Products</h1>
         </div>
       </main>
       <section className="latest">

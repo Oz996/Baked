@@ -2,12 +2,20 @@
 
 .latest {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
   width: 80%;
   margin: 0 auto;
   font-family: "Poppins";
   margin-top: 20rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   .latest-card {
     outline: 1px solid rgb(230, 230, 230);
@@ -56,11 +64,10 @@
     }
   }
 }
-.loader-latest{
-    display: flex;
-    width: 150rem;
-    height: 50rem;
-    margin-top: 3rem;
-    justify-content: center;
-
+.loader-latest {
+  display: flex;
+  width: 150rem;
+  height: 50rem;
+  margin-top: 3rem;
+  justify-content: center;
 }

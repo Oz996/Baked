@@ -187,7 +187,7 @@
 
 @media (max-width: 900px) {
   .product-page-section {
-    height: 150vh;
+    height: 160vh;
     width: 100%;
     .display-div{
       position: relative;
@@ -218,5 +218,10 @@
         margin-left: 5rem;
       }
     }
+  }
+}
+@media (max-width: 400px) {
+  .product-page-section {
+    height: 230vh;
   }
 }

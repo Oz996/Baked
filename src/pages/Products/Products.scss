@@ -120,16 +120,6 @@
   margin-bottom: 0.7rem;
 }
 
-@media (max-width: 900px) {
-  .product-div {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .filter-container {
-    width: 70vw !important;
-  }
-}
-
 // Filter section
 .filter-container {
   width: 15vw;
@@ -208,3 +198,27 @@
     }
   }
 }
+
+@media (max-width: 740px) {
+  .product-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .filter-container {
+    width: 70vw !important;
+  }
+}
+
+@media (max-width: 1030px) {
+  .product-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20rem;
+  }
+  .filter-container{
+    position:absolute;
+    width: 80%;
+    top: 10%;
+  }
+}
+
