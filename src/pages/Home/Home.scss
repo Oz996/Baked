@@ -12,7 +12,7 @@
   background-image: url("/images/Abbotts3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -10rem;
+  background-position: 0 -5rem;
   height: 50rem;
   width: 100%;
 }
@@ -88,13 +88,16 @@
   .carousel-container {
     width: 90%;
   }
-  .carousel-one{
-
-    .carousel-button{
-      display: none;
-    }
-  } 
 }
 @media screen and (max-width: 712px) {
-
+  .carousel-container {
+    .carousel-inner {
+      flex-direction: column;
+      align-items: center;
+      top: 75%;
+    }
+    .carousel-overlay {
+      height: 15rem;
+    }
+  }
 }
