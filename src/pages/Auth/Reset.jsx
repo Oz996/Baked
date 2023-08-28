@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Form.scss";
 import { HiOutlineMail } from "react-icons/hi";
 import { sendPasswordResetEmail } from "firebase/auth";
-import { auth } from "../firebase/config";
+import { auth } from "../../firebase/config"
 import { useNavigate } from "react-router-dom";
 
 const Reset = () => {

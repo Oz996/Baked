@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./Form.scss";
 import { HiOutlineMail, HiOutlineKey } from "react-icons/hi";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase/config";
+import { auth } from "../../firebase/config"
 import { useNavigate } from "react-router-dom";
-import Loader from "../utils/Loader/Loader";
+import Loader from "../../utils/Loader/Loader";
+
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -54,7 +55,7 @@ const Register = () => {
         <label htmlFor="email">Email:</label>
         <div className="form-input">
           <span>
-            <HiOutlineMail className="icon" size={23} />
+            <HiOutlineMail className="icon" size={28} />
           </span>
           <input
             type="email"
@@ -66,7 +67,7 @@ const Register = () => {
         <label htmlFor="password">Password:</label>
         <div className="form-input">
           <span>
-            <HiOutlineKey className="icon" size={23} />
+            <HiOutlineKey className="icon" size={28} />
           </span>
           <input
             type="password"
@@ -78,7 +79,7 @@ const Register = () => {
         <label htmlFor="confirmPassword">Confirm password: </label>
         <div className="form-input">
           <span>
-            <HiOutlineKey className="icon" size={23} />
+            <HiOutlineKey className="icon" size={28} />
           </span>
           <input
             type="password"

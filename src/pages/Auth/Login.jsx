@@ -4,10 +4,10 @@ import { HiOutlineMail, HiOutlineKey } from "react-icons/hi";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { auth } from "../firebase/config";
+import { auth } from "../../firebase/config";
 import { useNavigate } from "react-router-dom";
 import { GoogleAuthProvider } from "firebase/auth";
-import Loader from "../utils/Loader/Loader";
+import Loader from "../../utils/Loader/Loader";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -30,8 +30,8 @@ const Login = () => {
         navigate("/");
       })
       .catch((error) => {
-        if (email.length > 0 || password.length > 0) {
-          setError("User does not exist");
+        if (email.length > 0 && password.length > 0) {
+          setError("Wrong credentials");
         }
         setIsLoading(false);
         const errorCode = error.code;
@@ -63,7 +63,7 @@ const Login = () => {
         <label htmlFor="email">Email:</label>
         <div className="form-input">
           <span>
-            <HiOutlineMail className="icon" size={23} />
+            <HiOutlineMail className="icon" size={28} />
           </span>
           <input
             type="email"
@@ -75,7 +75,7 @@ const Login = () => {
         <label htmlFor="password">Password:</label>
         <div className="form-input">
           <span>
-            <HiOutlineKey className="icon" size={23} />
+            <HiOutlineKey className="icon" size={28} />
           </span>
           <input
             type="password"

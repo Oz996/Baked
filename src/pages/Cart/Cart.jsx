@@ -53,7 +53,7 @@ const Cart = () => {
       <div className="cart-empty">
         <BsCartX size={60}/>
         <span>Cart is empty</span>
-        <Link to="/">Start browsing</Link>
+        <Link to="/products">Start browsing</Link>
       </div>
     );
   }

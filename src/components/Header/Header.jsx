@@ -22,6 +22,7 @@ const Header = () => {
     : "";
 
   const cartItems = useSelector((state) => state.cart.cartItems || []);
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -78,10 +79,14 @@ const Header = () => {
             onClick={() => setDisplayHamburger((prev) => !prev)}
           />
           <nav className={displayHamburger && "show-nav"}>
-            <NavLink to="/profile">
-              <FaUser size={20} />
-              <span>Profile</span>
-            </NavLink>
+            {isLoggedIn ? (
+              <NavLink to="/profile">
+                <FaUser size={20} />
+                <span>Profile</span>
+              </NavLink>
+            ) : (
+              ""
+            )}
             <NavLink to="/">
               <FaHome />
               <span>Home</span>
@@ -104,7 +109,13 @@ const Header = () => {
 
             <FaShoppingCart className="cart-icon" onClick={handleCartClick} />
             {cartItems.length > 0 && (
-              <div className="cart-preview-quantity">{cartItems.length}</div>
+              <motion.div
+                className="cart-preview-quantity"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+              >
+                {cartItems.length}
+              </motion.div>
             )}
 
             {showCart && <CartPreview setShowCart={setShowCart} />}

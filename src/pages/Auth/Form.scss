@@ -1,4 +1,4 @@
-@import "../styles/colors";
+@import "../../styles/colors";
 
 .form-wrapper {
   width: 25%;
@@ -30,7 +30,7 @@
       margin-block: 0.3rem;
     }
     input {
-      padding: 0.9rem 4rem;
+      padding: 1.3rem 4rem;
       border-width: 1px;
       border-radius: 0.3rem;
       margin-bottom: 2rem;
@@ -54,7 +54,7 @@
       margin-block: -1rem;
     }
     button {
-      padding: 0.7rem;
+      padding: 1.3rem;
       border: none;
       cursor: pointer;
       border-radius: 0.3rem;
@@ -62,7 +62,7 @@
       background-color: $primary-color;
       font-weight: bold;
       margin-block: 0.5rem;
-      min-height: 2.9rem;
+      min-height: 4.1rem;
 
       &:hover {
         background-color: $primary-hover;
@@ -120,7 +120,7 @@
 
   .icon {
     position: absolute;
-    bottom: 2.5rem;
-    left: 0.5rem;
+    bottom: 2.8rem;
+    left: 1rem;
   }
 }
