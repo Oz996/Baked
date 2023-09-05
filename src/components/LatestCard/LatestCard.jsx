@@ -21,7 +21,7 @@ const LatestCard = ({ product }) => {
         <span>€{product.price}</span>
         <div className="latest-buttons">
           <button className="green-button" onClick={addProduct}>
-            Add Ware
+            Add to Cart
           </button>
           <Link to={`/products/${product.id}`} onClick={scrollToTop}>
             <button>More Info</button>

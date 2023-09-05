@@ -43,7 +43,7 @@ const Product = ({ ware }) => {
             <img className="hover-image" src={ware.image} alt="" />
           </div>
           <div className="hover-buttons">
-            <button className="hover-button" onClick={() => handleAddToCart(ware)}>Add Ware</button>
+            <button className="hover-button" onClick={() => handleAddToCart(ware)}>Add to Cart</button>
 
             <Link to={`/products/${ware.id}`} onClick={scrollToTop}>
               <button className="hover-button hover1">More Info</button>
@@ -58,7 +58,7 @@ const Product = ({ ware }) => {
           <p className="ware-price">€{ware.price}</p>
           <div className="ware-buttons">
             <button className="btn-green">
-              Add Ware
+              Add to Cart 
             </button>
             <button>More Info</button>
           </div>
