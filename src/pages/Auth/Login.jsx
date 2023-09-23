@@ -21,6 +21,7 @@ const Login = () => {
     e.preventDefault();
     if (email === "" || password === "") {
       setError("Please fill out all the fields");
+      return
     }
     setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)

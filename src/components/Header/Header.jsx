@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { FaHome, FaShoppingCart, FaUser } from "react-icons/fa";
 import { GiSlicedBread, GiHamburgerMenu } from "react-icons/gi";
 import { HiUser, HiOutlineLogout } from "react-icons/hi";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../../firebase/config";
 import { useDispatch, useSelector } from "react-redux";
-import { setActiveUser, removeActiveUser } from "../../redux/slice/authSlice";
-import ShowOnLogin, { ShowOnLogout } from "../hiddenLink/hiddenLink";
+import {
+  setActiveUser,
+  removeActiveUser,
+  selectIsLoggedIn,
+} from "../../redux/slice/authSlice";
 import CartPreview from "../CartPreview/CartPreview";
 import { motion } from "framer-motion";
 import "./Header.scss";
+import Footer from "../Footer/Footer";
 
 const Header = () => {
   const [email, setEmail] = useState("");
@@ -22,7 +26,7 @@ const Header = () => {
     : "";
 
   const cartItems = useSelector((state) => state.cart.cartItems || []);
-  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const isLoggedIn = useSelector(selectIsLoggedIn);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -84,9 +88,7 @@ const Header = () => {
                 <FaUser size={20} />
                 <span>Profile</span>
               </NavLink>
-            ) : (
-              ""
-            )}
+            ) : null}
             <NavLink to="/">
               <FaHome />
               <span>Home</span>
@@ -95,17 +97,16 @@ const Header = () => {
               <GiSlicedBread />
               <span>Products</span>
             </NavLink>
-            <ShowOnLogout>
+            {!isLoggedIn ? (
               <NavLink to="/login">
                 <HiUser />
                 <span>Login</span>
               </NavLink>
-            </ShowOnLogout>
-            <ShowOnLogin>
+            ) : (
               <NavLink onClick={logoutUser}>
                 <HiOutlineLogout /> <span>Logout</span>
               </NavLink>
-            </ShowOnLogin>
+            )}
 
             <FaShoppingCart className="cart-icon" onClick={handleCartClick} />
             {cartItems.length > 0 && (
@@ -128,6 +129,7 @@ const Header = () => {
           ></motion.div>
         </div>
       </header>
+      <Outlet />
     </>
   );
 };

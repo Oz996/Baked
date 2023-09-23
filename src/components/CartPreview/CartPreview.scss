@@ -61,7 +61,12 @@
   .action-buttons {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    position: absolute;
+    bottom: 2rem;
+    padding-inline: 5rem;
+    :nth-child(2){
+      margin-left: 2rem;
+    }
     .btn-cart {
       margin-top: 1.5rem;
       padding: 1rem 2.5rem;

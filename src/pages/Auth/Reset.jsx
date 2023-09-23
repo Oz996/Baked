@@ -48,7 +48,7 @@ const Reset = () => {
           />
         </div>
         {error && <p className="error">{error}</p>}
-        <button>Reset</button>
+        <button>Send</button>
       </form>
     </div>
   );

@@ -9,12 +9,13 @@ import {
   removeFromCart,
 } from "../../redux/slice/cartSlice";
 import { Link } from "react-router-dom";
-import ShowOnLogin, { ShowOnLogout } from "../hiddenLink/hiddenLink";
 import { RxCross2 } from "react-icons/rx";
 import { AnimatePresence, motion } from "framer-motion";
+import { selectIsLoggedIn } from "../../redux/slice/authSlice";
 
 const CartPreview = ({ setShowCart }) => {
   const cartItems = useSelector((state) => state.cart.cartItems || []);
+  const isLoggedIn = useSelector(selectIsLoggedIn);
   const dispatch = useDispatch();
   const cartRef = useRef();
 
@@ -102,21 +103,20 @@ const CartPreview = ({ setShowCart }) => {
         )}
         {cartItems.length > 0 ? (
           <div className="action-buttons">
-            <ShowOnLogin>
+            {isLoggedIn ? (
               <Link to="/cart">
                 <button className="btn-cart" onClick={() => setShowCart(false)}>
                   To Cart
                 </button>
               </Link>
-            </ShowOnLogin>
-
-            <ShowOnLogout>
+            ) : (
               <Link to="/login">
                 <button className="btn-cart" onClick={() => setShowCart(false)}>
                   Login to Purchase
                 </button>
               </Link>
-            </ShowOnLogout>
+            )}
+
             <button
               onClick={() => dispatch(clearCart())}
               className="btn-remove"
