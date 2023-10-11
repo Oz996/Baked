@@ -76,12 +76,11 @@ header {
     display: block;
   }
   .show-nav {
-    display: block;
+    display: flex;
     flex-direction: column;
     position: relative;
-    align-items: start;
-    right: 0rem;
-    top: 20rem;
+    right: 30%;
+    top: 17rem;
     z-index: 2;
   }
   .hamburger {
@@ -90,13 +89,13 @@ header {
 
   @media screen and (max-width: 1134px) {
     .hamburger-div {
-      width: 30rem;
+      width: 100%;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.15);
       background-color: white;
-      position: fixed;
-      top: 0;
+      position: absolute;
+      top: 6rem;
       right: 0;
-      min-height: 100vh;
+      min-height: 30vh;
       overflow: auto;
       z-index: 1;
     }
@@ -140,8 +139,6 @@ header {
       }
       nav {
         justify-content: space-around;
-        gap: 3.5rem;
-
       }
     }
   }

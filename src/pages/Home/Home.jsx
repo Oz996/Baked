@@ -66,14 +66,14 @@ const Home = () => {
             </div>
           </Flickity>
           <h1>Latest Products</h1>
+          {isLoading && (
+            <div className="loader-latest">
+              <LoaderBig />
+            </div>
+          )}
         </div>
       </main>
       <section className="latest">
-        {isLoading && (
-          <div className="loader-latest">
-            <LoaderBig />
-          </div>
-        )}
         {displayLatestProducts.map((product) => (
           <LatestCard product={product} key={product.id} />
         ))}

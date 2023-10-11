@@ -30,8 +30,8 @@
   h1 {
     position: relative;
     top: 9vh;
-    left: 20vw;
     font-size: 3.5rem;
+    text-align: center;
   }
   span {
     color: white;
@@ -86,7 +86,7 @@
 
 @media screen and (max-width: 1134px) {
   .carousel-container {
-    width: 90%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 712px) {
