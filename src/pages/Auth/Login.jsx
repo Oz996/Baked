@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
     if (email === "" || password === "") {
       setError("Please fill out all the fields");
-      return
+      return;
     }
     setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
@@ -60,7 +60,7 @@ const Login = () => {
         </h1>
       </div>
       <form onSubmit={loginUser}>
-        <h2>Welcome back!</h2>
+        <h2>Sign in</h2>
         <label htmlFor="email">Email:</label>
         <div className="form-input">
           <span>
@@ -86,17 +86,17 @@ const Login = () => {
           />
         </div>
         <h3>
-          Not registered?
+          Not registered?{" "}
           <Link style={{ color: "#35A00F" }} to="/register">
             Register
-          </Link>
+          </Link>{" "}
           here
         </h3>
         <h3 className="h3">
-          Forgot password?
+          Forgot password?{" "}
           <Link style={{ color: "#35A00F" }} to="/reset">
             Reset
-          </Link>
+          </Link>{" "}
           your password
         </h3>
         {error && <p className="error">{error}</p>}

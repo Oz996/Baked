@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import "./WareDetails.scss";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "../redux/slice/productSlice";
-import WareInfo from "../components/WareInfo";
+import { getProducts } from "../../redux/slice/productSlice";
+import WareInfo from "../../components/WareInfo";
 import arrowUp from "/images/arrow-up.png";
 import arrowDown from "/images/arrow-down.png";
 

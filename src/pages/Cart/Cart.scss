@@ -79,7 +79,7 @@
       gap: 5rem;
     }
     img {
-      height: 10vh;
+      width: 10rem;
     }
     .buttons {
       display: flex;
@@ -101,6 +101,14 @@
 
 @media (max-width: 900px) {
   .cart-container {
+    width: 100%;
+    padding-inline: 2rem;
+    .shopping-div{
+      width: 100%;
+    }
+    img{
+      width: 10rem !important;
+    }
     .cart {
       display: flex;
       gap: 1rem;

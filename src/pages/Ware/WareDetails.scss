@@ -1,4 +1,4 @@
-@import "./colors";
+@import "../../styles/colors";
 
 // Products page header
 .header-details {
@@ -10,7 +10,7 @@
   .cart-icon {
     color: $primary-color;
   }
-  .hamburger{
+  .hamburger {
     color: black;
   }
 }
@@ -192,7 +192,7 @@
   .product-page-section {
     height: 160vh;
     width: 100%;
-    .display-div{
+    .display-div {
       position: relative;
       width: 100%;
     }
@@ -223,8 +223,8 @@
     }
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .product-page-section {
-    height: 230vh;
+    padding-bottom: 170rem;
   }
 }
